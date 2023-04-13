@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script> 
+    function searchCall() {
+      const textField = document.getElementById("field");
+      console.log("search is called", textField.value);
+   }
+
+
+function debounce(func, delay) {
+  let timer;
+  return function() {
+     if(timer) {
+       clearTimeout(timer);
+     }
+     timer = setTimeout(func, delay);
+  }
+}
+
+let debouncedCall = debounce(searchCall, 3000);
+  </script>
+</head>
+<body>
+  <input type="text" id="field" onkeyup="debouncedCall()"/>
+</body>
+</html>

@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import DigitalClock from "./component/DigitalClock";
+// import ContextApi from "./ContextApi";
+// import ClassComp from "./component/ClassComp";
+import Adobe from "./component/Adobe";
+import Adobe2 from "./component/Adobe-2";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <DigitalClock />
+      <ContextApi /> */}
+      <Adobe/>
+      <Adobe2/>
     </div>
   );
 }
