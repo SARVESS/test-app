@@ -1,25 +1,24 @@
-import React, { useState } from "react";
-import ClassContextComponent from "./component/ClassContextComponent";
-import FunctionContextComponent from "./component/FunctionContextComponent";
+import { createContext, useState } from "react";
+import FunctionContextComponent from './component/FunctionContextComponent';
+import ClassContextComponent from './component/ClassContextComponent';
 
-
-export const ThemeContext = React.createContext();
+export const ThemeContext = createContext();
 
 export default function ContextApi() {
     const [darkTheme, setDarkTheme] = useState(true);
 
-
     function toggleTheme() {
-        setDarkTheme(prevDarkTheme => !prevDarkTheme);
+        setDarkTheme(!darkTheme);
     }
 
     return (
-        <>  
-          <ThemeContext.Provider value={darkTheme}>
-             <button onClick={toggleTheme}>Toggle Theme</button>
-             <FunctionContextComponent />
-             <ClassContextComponent />  
-          </ThemeContext.Provider>    
+        <>
+        <ThemeContext.Provider value={darkTheme}>
+           <button onClick={toggleTheme}>Toggle Theme</button>
+          <FunctionContextComponent />
+          <ClassContextComponent />
+        </ThemeContext.Provider>
         </>
-    )
+    ) 
+
 }

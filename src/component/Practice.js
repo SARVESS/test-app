@@ -156,6 +156,9 @@ console.log(uniqueAgeGroup); // [ 18, 21, 1, 51, 5, 7, 10 ]
 // 9. high order components
 // 10. interviewbit questions
 // 11. spread operator and objects and array methods - done
+// 12. Generator Functions
+// 13. Questions like closures and there mcqs.
+// 14. setInterval and setTimeout 
 
 // Merge Two array and remove duplicates in JS
 const arr1 = [1, 2, 5, 6];
@@ -168,7 +171,7 @@ console.log(setArray);
 
 // React Lifecycle Methods -> 
 // Mounting Phase -> 
-// contructor -> static getDerivedStateFromProps -> render -> ComponentDidMount
+// constructor -> static getDerivedStateFromProps -> render -> ComponentDidMount
 
 // Updating Phase -> 
 // static getDerivedStateFromProps -> shouldComponentUpdate -> render -> getSnapShotBeforeUpdate -> componentDidUpdate

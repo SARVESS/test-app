@@ -1,8 +1,8 @@
 // Factory Pattern
 
 class TailFactory {
-    constructor(props) {
-      this.tailLength = props.tailLength;
+    constructor(args) {
+      this.tailLength = args.tailLength;
     }
     
     getTailLength() {
@@ -11,8 +11,8 @@ class TailFactory {
   }
   
   class TorsoFactory {
-    constructor(props) {
-      this.torso = props.torso;
+    constructor(args) {
+      this.torso = args.torso;
     }
     
     getTorso() {
@@ -21,8 +21,8 @@ class TailFactory {
   }
   
   class HeadFactory {
-    constructor(props) {
-      this.head = props.head;
+    constructor(args) {
+      this.head = args.head;
     }
     
     getHead() {
@@ -31,15 +31,15 @@ class TailFactory {
   }
   
   class ReptileFactory {
-    constructor(type, props) {
+    constructor(type, args) {
       if(type === "tail") {
-        return new TailFactory(props);
+        return new TailFactory(args);
       }
       if(type === "torso") {
-        return new TorsoFactory(props);
+        return new TorsoFactory(args);
       }
       if(type === "head") {
-        return new HeadFactory(props);
+        return new HeadFactory(args);
       }
     }
   }
