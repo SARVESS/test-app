@@ -144,7 +144,7 @@ console.log(uniqueAgeGroup); // [ 18, 21, 1, 51, 5, 7, 10 ]
 //   c. Thirs party libraries like lodash.  
 
 
-// What to prepare for sure in js -
+// What to prepare for sure in js [By Googling or in this project] -
 // 1. closures and IIFEE. - done
 // 2. this - done
 // 3. currying - done
@@ -159,6 +159,10 @@ console.log(uniqueAgeGroup); // [ 18, 21, 1, 51, 5, 7, 10 ]
 // 12. Generator Functions
 // 13. Questions like closures and there mcqs.
 // 14. setInterval and setTimeout 
+// 15. ReactJs Refs
+// 16. Eventloop, streams and buffers in nodejs.
+// 17. More about nodejs like i/o non-blocking behaviour, callback queues, call stack etc.
+// 18. What is nodejs ?
 
 // Merge Two array and remove duplicates in JS
 const arr1 = [1, 2, 5, 6];
@@ -180,3 +184,6 @@ console.log(setArray);
 // componentWillUnmount
 
 // Inversion of control (IOC) talks about who will initiate the call, whereas Dependency Injection (DI) talks about how one object acquires dependency on another object through abstraction.
+
+ // LINK FOR REACT REFS -
+ // https://legacy.reactjs.org/docs/refs-and-the-dom.html
